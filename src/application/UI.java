@@ -59,6 +59,9 @@ public class UI {
         System.out.println();
         System.out.println("Turn :" + chessMatch.getTurn());
         System.out.println("Waiting player: " + (chessMatch.getCurrentPlayer() == Color.WHITE ? "WHITE" : "BLACK"));
+        if(chessMatch.getCheck()){
+            System.out.println("CHECK!");
+        }
 
         //System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
         //código antigo que estava com o erro java.awt.Color[r=255,g=255,b=255]
